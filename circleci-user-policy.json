@@ -7,7 +7,7 @@
 				"s3:PutObject"
 			],
 	    "Effect": "Allow",
-	    "Resource": "arn:aws:s3:::danainanch/*"
+	    "Resource": "<YOUR_BUCKET_ARN_HERE>/*"
 	  },
 		{            
 			"Sid": "PermissionsToCreateAndUpdateFunction",            
@@ -18,7 +18,7 @@
 				"lambda:UpdateFunctionCode"            
 			],            
 			"Resource": [                
-				"arn:aws:lambda:us-east-2:157404775276:function:postlab"            
+				"<YOUR_LAMBDA_ARN_HERE>"            
 			]        
 		}
 	]
