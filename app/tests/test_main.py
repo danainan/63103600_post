@@ -10,6 +10,6 @@ def test_read_name():
     assert response.json() == {"hello": "Danainan"}
 
 def test_post_name():
-    response = client.post("/callname/Danainan")
+    response = client.post("/callname")
     assert response.status_code == 200
     assert response.json() == {"hello": "Danainan"}
